@@ -1,0 +1,50 @@
+{
+  "name": "angular-vertical-menu",
+  "description": "Simple vertical menu",
+  "version": "0.0.1",
+  "keywords": [
+    "menu"
+  ],
+  "authors": {
+    "name": "Gilles Navarro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gnavarro77/angular-vertical-menu"
+  },
+  "main": [
+    "build/angular-vertical-menu.js",
+    "build/angular-vertical-menu.css"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "bootstrap-css-only": "latest",
+    "components-font-awesome": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest",
+    "jquery": "~2.1.4"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "*.js",
+    "*.json",
+    "src/**",
+    "demo/**",
+    "Copyright",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/gnavarro77/angular-vertical-menu",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "64d48b2a019a3f72c457ca1d95a8683a6b099d1d"
+  },
+  "_source": "git://github.com/gnavarro77/angular-vertical-menu.git",
+  "_target": "~0.0.1",
+  "_originalSource": "angular-vertical-menu"
+}
