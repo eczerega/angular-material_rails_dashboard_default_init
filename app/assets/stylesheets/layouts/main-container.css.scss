@@ -1,0 +1,15 @@
+@import "palette/colors";
+
+
+.sheets-container
+{
+  padding: 10px;
+}
+.sheet
+{
+  background-color: $template-white;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(130,127,130,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(130,127,130,1);
+  box-shadow: 0px 0px 5px 0px rgba(130,127,130,1);
+}

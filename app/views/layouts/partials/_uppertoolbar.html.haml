@@ -1,0 +1,9 @@
+.md-toolbar-tools
+  %md-button.md-icon-button{"aria-label" => "Menu Button", "hide-gt-md" => "", "ng-click" => "onClickMenu();"}
+    %md-icon{"aria-label" => "Menu Icon", "md-svg-icon" => "#{image_url 'menu.svg'}"}
+  %h2 Título de la vista
+  %span
+    %md-input-container.md-block{"flex-gt-sm" => ""}
+      %label Bucar...
+      %input{"ng-model" => "user.firstName"}/
+  %span{:flex => ""}

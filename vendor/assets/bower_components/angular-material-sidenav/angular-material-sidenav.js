@@ -388,9 +388,11 @@
            //     alert('asd');
            // }
         $templateCache.put('views/ss/menu-link.tmpl.html',
+            //'<span>\n'+
             '<md-button\n' +
             '   ss-style-color="{\'background-color\': (isSelected(section.state) || $state.includes(section.state)) ? \'primary.800\': \'primary.default\'}"' +
-            '   class="md-raised md-primary"' +
+            '   class="md-raised md-primary"\n' +
+            '   ng-class="{true:\'selected\', false:\'not-selected\'}[(isSelected(section.state))==true]"\n'+
             '   ui-sref="{{section.state}}"\n' +
             '   ng-click="focusSection(section)">\n' +
             '   <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}  <span class="badge side-badge" style="background-color: {{section.color}} "> {{section.quantity}}</span>  \n' +
@@ -399,6 +401,7 @@
             '       current page\n' +
             '   </span>\n' +
             '</md-button>\n'
+            //'</span>'
         );
 
         $templateCache.put('views/ss/menu-toggle.tmpl.html',

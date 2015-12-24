@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Main Dashboard
+    %link{:href => "https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic", :rel => "stylesheet"}/
+    %meta{:content => "initial-scale=1", :name => "viewport"}/
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body{"ng-app" => "demoApp"}
+    .main-container{:flex => "", :layout => "row", "ng-controller" => "MainCtrl", "ui-view" => ""}
+      =render 'layouts/partials/sidebar'
+      %div{:flex => "", :layout => "column", :role => "main"}
+        %md-toolbar.header-toolbar
+          =render 'layouts/partials/uppertoolbar'
+        .sheets-container
+          =yield

@@ -27,9 +27,6 @@ var app =angular
 
             $mdThemingProvider
                 .theme('default')
-                .primaryPalette('blue', {
-                    'default': '700'
-                });
 
             $urlRouterProvider.otherwise(function () {
                 return '/';
@@ -187,6 +184,7 @@ var app =angular
                 id: 'link_2',
                 name: 'Link 2',
                 state: 'common.link2',
+                icon: 'fa fa-check',
                 type: 'link'
             }, {
                 id: 'link_3',
@@ -199,7 +197,8 @@ var app =angular
                 name: 'Section Heading 2',
                 type: 'heading',
                 children: [{
-                    name: 'Toogles 2',
+                    name: 'Toggles 2',
+                    icon: 'fa fa-check',
                     type: 'toggle',
                     pages: [{
                         id: 'toogle_2_link_1',

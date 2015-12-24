@@ -4,6 +4,8 @@
  * @license MIT
  * v1.0.0
  */
+
+@import "palette/colors";
 html, body {
   height: 100%;
   color: rgba(0, 0, 0, 0.87);
@@ -11057,7 +11059,7 @@ md-icon {
   background-repeat: no-repeat no-repeat;
   display: inline-block;
   vertical-align: middle;
-  fill: currentColor;
+  fill: $header-color;
   height: 24px;
   width: 24px; }
   md-icon svg {
@@ -12995,8 +12997,8 @@ md-sidenav {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 60;
-  width: 320px;
-  max-width: 320px;
+  width: 234px;
+  max-width: 234px;
   bottom: 0;
   overflow: auto; }
   md-sidenav ul {
@@ -13035,8 +13037,8 @@ md-sidenav {
             transform: translate3d(0%, 0, 0); }
   md-sidenav.md-closed.md-locked-open-add-active {
     transition: width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2), min-width 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-    width: 320px;
-    min-width: 320px;
+    width: 234px;
+    min-width: 234px;
     -webkit-transform: translate3d(0%, 0, 0);
             transform: translate3d(0%, 0, 0); }
 

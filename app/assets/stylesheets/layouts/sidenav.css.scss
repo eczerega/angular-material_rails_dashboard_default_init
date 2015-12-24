@@ -1,5 +1,7 @@
+@import "palette/colors";
 .menu {
   margin: 0;
+  background-color: $sidebar-background-color !important;
 }
 
 .menu,
@@ -40,8 +42,9 @@
   text-decoration: none;
   white-space: normal;
   width: 100%;
-  font-size: 12px !important;
-  font-weight: 800;
+  font-size: 14px !important;
+  //font-weight: 600;
+  text-transform: capitalize !important;
 }
 
 .menu md-select {
@@ -79,6 +82,8 @@
   padding: 8px 16px 0;
   text-align: left;
   width: 100%;
+  color: darken($template-white, 30%) !important;
+  font-size: 13px !important;
 
 }
 
@@ -93,7 +98,7 @@
   padding: 0 16px 0 32px;
   text-transform: none;
   text-rendering: optimizeLegibility;
-  font-weight: 400 !important;
+  //font-weight: 400 !important;
 }
 
 .md-button-toggle .md-toggle-icon {
@@ -116,13 +121,60 @@
 .side-badge
 {
 
-  float: right;
-  margin-right: 34px;
-  margin-top: 10px;
+  //float: right;
+  //margin-right: 34px;
+  //margin-top: 13px;
+  margin-left: 10px;
   background-color: transparent;
 }
 
 .middle-icon
 {
-  margin-top: 10px;
+  margin-top: 13px;
 }
+
+
+.main-container
+{
+  height: 100%;
+  background-color: $main-background-color !important;
+  .sidebar-container
+  {
+    background-color: $sidebar-background-color !important;
+
+    a.md-button.md-default-theme.md-primary.md-raised, a.md-button.md-primary.md-raised, a.md-button.md-default-theme.md-primary.md-fab, a.md-button.md-primary.md-fab, .md-button.md-default-theme.md-primary.md-raised, .md-button.md-primary.md-raised, .md-button.md-default-theme.md-primary.md-fab, .md-button.md-primary.md-fab
+    {
+      background-color: transparent;
+      border-width: 0px !important;
+    }
+
+
+  }
+}
+
+.ng-scope.ng-isolate-scope
+{
+  border-bottom-color: transparent!important;
+}
+
+.selected
+{
+  font-weight: 700;
+  background-color: lighten($sidebar-background-color,10%) !important;
+  color: white !important;
+}
+.not-selected
+{
+
+  color: $sidebar-color !important;
+  border-style: none;
+  background-color: transparent !important;
+  font-weight: 400;
+}
+
+.title
+{
+  background-color: $sidebar-background-color !important;
+
+}
+
